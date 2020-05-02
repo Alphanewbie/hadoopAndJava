@@ -42,7 +42,7 @@ public class TomcatLogHDFS_Save {
 		    FileStatus fStatus =hdfs.getFileStatus(hdfspath);
 		    
 		    if (fStatus.isFile()) {
-		    	System.out.println( fStatus.getBlockSize());
+//		    	System.out.println( fStatus.getBlockSize());
 		    	System.out.println( fStatus.getLen());
 		    }
 		    hdfs.close();
