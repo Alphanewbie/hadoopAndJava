@@ -6,6 +6,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
+// 갯수만 센다.
 public class DelayCountReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
 	private IntWritable result = new IntWritable();

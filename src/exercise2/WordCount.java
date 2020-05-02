@@ -13,8 +13,9 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 public class WordCount {
 	public static void main(String[] args) throws Exception {
 		Configuration conf = new Configuration();
-		conf.set("fs.default.name", "hdfs://192.168.111.120:9000");
-
+//		conf.set("fs.default.name", "hdfs://192.168.111.120:9000");
+		conf.set("fs.defaultFS", "hdfs://192.168.111.120:9000");
+		
 		// 맵 리듀스를 요청하는 것을 job이라고 한다.
 		Job job = Job.getInstance(conf, "WordCount");
 
